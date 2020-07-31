@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: marciasheilapipelinessampleapp 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: marciasheilapipelinessampleapp 
+    spec:
+      containers:
+        - name: marciasheilapipelinessampleapp 
+          image: mspgcr.azurecr.io/marciasheilapipelinessampleapp
+          ports:
+          - containerPort: 8080
