@@ -12,7 +12,7 @@ variables:
 
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'docker'
-  imageRepository: 'marciasheilapipelinessampleapp'
+  imageRepository: 'marciasheilapipelines'
   containerRegistry: 'mspgcrdelete.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
