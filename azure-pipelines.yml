@@ -11,7 +11,7 @@ resources:
 variables:
 
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'dockercontainer'
+  dockerRegistryServiceConnection: 'docker'
   imageRepository: 'marciasheilapipelinessampleapp'
   containerRegistry: 'mspgcrdelete.azurecr.io'
   dockerfilePath: '**/Dockerfile'
